@@ -1,8 +1,10 @@
 @charset "UTF-8";
+/*------共通-------*/
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS PGothic", sans-serif;
+  color: #333;
 }
 li {
   list-style: none;
@@ -12,6 +14,7 @@ a {
   color: #333;
 }
 
+/*------header-------*/
 header {
   height: 70px;
   background: #fff;
@@ -24,8 +27,11 @@ header {
   align-items: center;
   margin: 0 36px;
 }
-.HeaderArea-logo {
+.Header-logo {
   height: 20px;
+}
+.Header-logo-image {
+  height: 100%;
   width: auto;
 }
 .HeaderLists {
@@ -37,11 +43,18 @@ header {
   align-items: center;
   margin-right: 45px;
 }
+.HeaderLists li:last-child {
+  margin-right: 0px;
+}
 .HeaderLists a {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 0.75rem;
+}
+.HeaderContent-En {
+  line-height: 14.4px;
+  font-family: "Lato", sans-serif;
 }
 .HeaderContents-Ja {
   font-size: 0.625rem;
@@ -53,4 +66,64 @@ header {
     padding: 0 20px;
     border-radius: 40px;
     color: #fff;
+}
+
+/*------Top-------*/
+.Top {
+  position: relative;
+  height: 739px;
+}
+.Top img {
+  position: absolute;
+  z-index: -1;
+}
+.bg-image-triangle-left {
+  top: -70px;
+}
+.bg-image-main {
+  width: 775px;
+  top: -70px;
+  right: 0;
+}
+.bg-image-ellipse {
+  top: 84px;
+  left: -70px;
+}
+.bg-image-triangle-right {
+  bottom: 70px;
+  right: 0;
+}
+
+.TopContentsWrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-top: 219px;
+}
+.TopContents {
+  position: relative;
+  width: fit-content;
+}
+.TopContents-title {
+  font-size: 2.625rem;
+}
+.TopContents-title span {
+  font-family: "Lato", sans-serif;
+}
+.TopContentsBtn {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  padding: 20px 0;
+}
+.TopContents p {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.bg-image-badge {
+  position: absolute;
+  top: -105px;
+  right: -150px;
 }
