@@ -34,6 +34,9 @@ header {
   height: 100%;
   width: auto;
 }
+.Header-logo-image-sp {
+  display: none;
+}
 .HeaderLists {
   display: flex;
   font-weight: 700;
@@ -100,6 +103,9 @@ header {
   bottom: 70px;
   right: 0;
 }
+.bg-image-sp {
+  display: none;
+}
 
 .TopContentsWrapper {
   max-width: 1040px;
@@ -138,8 +144,15 @@ header {
   top: -105px;
   right: -150px;
 }
+.bg-image-badge-sp {
+  display: none;
+}
 /*-----レスポンシブ------*/
 @media (max-width: 1080px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
   .HeaderLists {
     display: none;
   }
@@ -166,5 +179,71 @@ header {
   }
   .Hamburger-line:first-child {
     top: 100%;
+  }
+  main {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .HeaderArea {
+    margin: 0 1rem;
+  }
+  .Header-logo {
+    height: auto;
+  }
+  .Header-logo-image {
+    display: none;
+  }
+  .Header-logo-image-sp {
+    display: block;
+    width: 148.5px;
+  }
+  .bg-image-triangle-left, .bg-image-ellipse, .bg-image-main, .bg-image-triangle-right {
+    display: none;
+  }
+  .bg-image-sp {
+    display: block;
+    width: 100%;
+    position: relative !important;
+    margin-top: -18px;
+  }
+  .TopContentsWrapper {
+    margin-top: 7px;
+    padding: 0 1rem;
+  }
+  .TopContents-title {
+    position: relative;
+    width: fit-content;
+    font-size: 1.375rem;
+    line-height: 2.25rem;
+  }
+  .bg-image-badge {
+    width: 102px;
+    height: 102px;
+    right: -85px;
+    top: 20px;
+  }
+  .bg-image-badge {
+    display: none;
+  }
+  .bg-image-badge-sp {
+    display: block;
+    width: 102px;
+    height: 102px;
+    top: -20px;
+    right: -85px;
+  }
+}
+@media (max-width: 414px) {
+  header {
+    height: 3rem;
+  }
+  .Hamburger {
+    height: 12px;
+    width: 18px;
+  }
+  .bg-image-sp {
+    margin-top: -22px;
   }
 }
