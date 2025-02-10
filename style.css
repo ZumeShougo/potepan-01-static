@@ -71,6 +71,9 @@ header {
     border-radius: 40px;
     color: #fff;
 }
+.Hamburger {
+  display: none;
+}
 
 /*------Top-------*/
 .Top {
@@ -134,4 +137,34 @@ header {
   position: absolute;
   top: -105px;
   right: -150px;
+}
+/*-----レスポンシブ------*/
+@media (max-width: 1080px) {
+  .HeaderLists {
+    display: none;
+  }
+  .Hamburger {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 17px;
+    margin: auto 0;
+  }
+  .Hamburger-line {
+    display: block;
+    position: absolute;
+    transform: translateY(-50%);
+    background: #A2A2A4;
+    width: 100%;
+    height: 2px;
+  }
+  .Hamburger-line:first-child {
+    top: 0%;
+  }
+  .Hamburger-line:nth-child(2) {
+    top: 50%;
+  }
+  .Hamburger-line:first-child {
+    top: 100%;
+  }
 }
